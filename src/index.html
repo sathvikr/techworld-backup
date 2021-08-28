@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TechWorld</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="icon" type="image/png" href="images/techworld_logo.png">
+	<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+	<header class="l-header">
+		<nav class="nav bd-grid">
+			<div>
+				<a href="index.html#" class="nav__logo">TechWorld</a>
+			</div>
+
+			<div class="nav__menu" id="nav-menu">
+				<ul class="nav__list">
+					<li class="nav__item"><a href="index.html" class="nav__link active">Home</a></li>
+					<li class="nav__item"><a href="schedule.html" class="nav__link">Important Information</a></li>
+					<li class="nav__item"><a href="details.html" class="nav__link">Event Details</a></li>
+					<li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+				</ul>
+			</div>
+
+			<div class="nav__toggle" id="nav-toggle">
+				<i class="bx bx-menu"></i>
+			</div>
+		</nav>
+	</header>
+	<main class="l-main">
+		<section class="home bd-grid" id="home" style="position: relative; width: 100%; text-align: center;">
+			<div id="particles-js" style="position: absolute;">
+			</div>
+			<div style="position: absolute; z-index: 9; left: 0; right: 0; margin-left: auto; margin-right: auto;">
+				<div class="home__data">
+					<h1 class="home__title">Welcome<br>to <span class="home__title-color">TechWorld</span></h1>
+					<button class="button mdc-button mdc-button--raised ripple" onclick="window.location.href='https://forms.gle/GFckaCJu6yNEDmUW7'">
+						<div class="mdc-button__ripple"></div>
+						<span class="mdc-button__label" style="font-family: 'Poppins'; text-transform: initial;">Register</span>
+					</button>
+				</div>
+				<!-- <div class="home__data">
+					<h1 class="home__title">Welcome<br>to <span class="home__title-color">TechWorld</span></h1>
+					<button class="button mdc-button mdc-button--raised ripple">
+						<div class="mdc-button__ripple"></div>
+						<span class="mdc-button__label" style="font-family: 'Poppins'; text-transform: initial;">Register</span>
+						<i class="material-icons mdc-button__icon" aria-hidden="true">app_registration</i>
+					</button>
+				</div>
+
+				<div class="home__social">
+					<a href="#" class="home__social-icon"><i class="bx bxl-youtube"></i></a>
+					<a href="#" class="home__social-icon"><i class="bx bxl-linkedin"></i></a>
+					<a href="#" class="home__social-icon"><i class="bx bxl-youtube"></i></a>
+				</div>
+
+				<div class="home__img">
+					<img src="">
+				</div> -->
+			</div>
+		</section>
+		<section class="about">
+			<h2 class="section-title">Why Attend?</h2>
+
+			<div class="about__container bd-grid">
+				<div>
+					<p class="about__text">TechWorld brings together passion and technology by organizing a broad event accompanying these factors. Attending will allow you to listen to in-person talks from professionals and renowned individuals within the field, showcase your own projects in an exposition, and participate in a multitude of software and hardware based competitions. </p>
+				</div>
+			</div>
+		</section>
+		<section class="features">
+			<div class="features__container">
+				<div class="mdc-layout-grid" style="width: 75%;">
+					<div class="mdc-layout-grid__inner" style="margin: 10px;">
+						<div class="mdc-layout-grid__cell">
+							<div class="mdc-card" style="width: 100%; border-radius: 0;">
+								<div class="mdc-card__content">
+									<div class="mdc-card__primary-text">
+										Compete
+									</div>
+									<div class="mdc-card__subtext">
+										Many events are competition-oriented and will allow you to win prizes by demonstrating your knowledge and creativity in the technology field. 
+									</div>
+								</div>
+								<div class="mdc-card__media mdc-card__media--square" style="background-image: url('images/trophy2.png');"></div>
+								<div class="mdc-card__actions mdc-card__actions--full-bleed">
+									<a class="mdc-button mdc-card__action mdc-card__action--button" href="#">
+										<div class="mdc-button__ripple"></div>
+										<span class="mdc-button__label">Details</span>
+										<i class="material-icons mdc-button__icon" aria-hidden="true">arrow_forward</i>
+									</a>
+								</div>			
+							</div>
+						</div>
+						<div class="mdc-layout-grid__cell">
+							<div class="mdc-card" style="width: 100%; border-radius: 0;">
+								<div class="mdc-card__content">
+									<div class="mdc-card__primary-text">
+										Listen
+									</div>
+									<div class="mdc-card__subtext">
+										Listen to experts in the field share their technology-related knowledge, experience, and ideas with you and get a chance to <a href="#">speak at TJ yourself.</a>
+									</div>
+								</div>
+								<div class="mdc-card__media mdc-card__media--square" style="background-image: url('images/speaker6.jpeg');"></div>	
+								<div class="mdc-card__actions mdc-card__actions--full-bleed">
+									<a class="mdc-button mdc-card__action mdc-card__action--button" href="#">
+										<div class="mdc-button__ripple"></div>
+										<span class="mdc-button__label">Details</span>
+										<i class="material-icons mdc-button__icon" aria-hidden="true">arrow_forward</i>
+									</a>
+								</div>	
+
+							</div>
+						</div>
+						<div class="mdc-layout-grid__cell">
+							<div class="mdc-card" style="width: 100%; border-radius: 0;">
+								<div class="mdc-card__content">
+									<div class="mdc-card__primary-text">
+										Showcase
+									</div>
+									<div class="mdc-card__subtext">
+										Showcase your own projects in an exposition style event or demonstrate your knowledge in various exciting activities for the passionate mind.
+									</div>
+								</div>
+								<div class="mdc-card__media mdc-card__media--square" style="background-image: url('images/showcase.jpeg');"></div>	
+								<div class="mdc-card__actions mdc-card__actions--full-bleed">
+									<a class="mdc-button mdc-card__action mdc-card__action--button" href="#">
+										<div class="mdc-button__ripple"></div>
+										<span class="mdc-button__label">Details</span>
+										<i class="material-icons mdc-button__icon" aria-hidden="true">arrow_forward</i>
+									</a>
+								</div>					
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="events">
+					<h2 class="section-title">Upcoming Events</h2>
+					<div>
+						<p class="about__text">A brief overview of some events you'll find at the next TechWorld.</p>
+					</div>
+					<div class="events__container">
+						<div class="mdc-layout-grid">
+							<div class="mdc-layout-grid__inner" style="margin: 10px;">
+								<div class="mdc-layout-grid__cell">
+									<div class="mdc-card" style="width: 100%; border-radius: 0;">
+										<div class="mdc-card__content">
+											<div class="mdc-card__primary-text">
+												Cipher Challenge
+											</div>
+											<div class="mdc-card__subtext">
+												Create your own algorithm for encrypting and decrypting complex codes. 
+											</div>
+										</div>
+										<div class="mdc-card__actions mdc-card__actions--full-bleed">
+											<a class="mdc-button mdc-card__action mdc-card__action--button" href="details.html#event-details">
+												<div class="mdc-button__ripple"></div>
+												<span class="mdc-button__label">Learn more</span>
+												<i class="material-icons mdc-button__icon" aria-hidden="true">arrow_forward</i>
+											</a>
+										</div>			
+									</div>
+								</div>
+								<div class="mdc-layout-grid__cell">
+									<div class="mdc-card" style="width: 100%; border-radius: 0;">
+										<div class="mdc-card__content">
+											<div class="mdc-card__primary-text">
+												Tech Tourney
+											</div>
+											<div class="mdc-card__subtext">
+												Win a prize by solving both algorithmic and product-oriented tech problems.
+											</div>
+										</div>
+										<div class="mdc-card__actions mdc-card__actions--full-bleed">
+											<a class="mdc-button mdc-card__action mdc-card__action--button" href="details.html#event-details">
+												<div class="mdc-button__ripple"></div>
+												<span class="mdc-button__label">Learn more</span>
+												<i class="material-icons mdc-button__icon" aria-hidden="true">arrow_forward</i>
+											</a>
+										</div>					
+									</div>
+								</div>
+								<div class="mdc-layout-grid__cell">
+									<div class="mdc-card" style="width: 100%; border-radius: 0;">
+										<div class="mdc-card__content">
+											<div class="mdc-card__primary-text">
+												Tech Talks
+											</div>
+											<div class="mdc-card__subtext">
+												Listen to speakers with an incredible amount of experience in fields relating to technology.
+											</div>
+										</div>
+										<div class="mdc-card__actions mdc-card__actions--full-bleed">
+											<a class="mdc-button mdc-card__action mdc-card__action--button" href="details.html#event-details">
+												<div class="mdc-button__ripple"></div>
+												<span class="mdc-button__label">Learn more</span>
+												<i class="material-icons mdc-button__icon" aria-hidden="true">arrow_forward</i>
+											</a>
+										</div>					
+									</div>
+								</div>
+							</div>
+							<div class="mdc-layout-grid__inner" style="margin: 10px;">
+								<div class="mdc-layout-grid__cell">
+									<div class="mdc-card" style="width: 100%; border-radius: 0;">
+										<div class="mdc-card__content">
+											<div class="mdc-card__primary-text">
+												TechSposition
+											</div>
+											<div class="mdc-card__subtext">
+												Sieze the opportunity to present your projects to a large audience of individuals interested in technology.
+											</div>
+										</div>
+										<div class="mdc-card__actions mdc-card__actions--full-bleed">
+											<a class="mdc-button mdc-card__action mdc-card__action--button" href="details.html#event-details">
+												<div class="mdc-button__ripple"></div>
+												<span class="mdc-button__label">Learn more</span>
+												<i class="material-icons mdc-button__icon" aria-hidden="true">arrow_forward</i>
+											</a>
+										</div>			
+									</div>
+								</div>
+								<div class="mdc-layout-grid__cell">
+									<div class="mdc-card" style="width: 100%; border-radius: 0;">
+										<div class="mdc-card__content">
+											<div class="mdc-card__primary-text">
+												Programming 50v50
+											</div>
+											<div class="mdc-card__subtext">
+												Split into red and blue teams and solve more algorithmic problems than the other team to win.
+											</div>
+										</div>
+										<div class="mdc-card__actions mdc-card__actions--full-bleed">
+											<a class="mdc-button mdc-card__action mdc-card__action--button" href="details.html#event-details">
+												<div class="mdc-button__ripple"></div>
+												<span class="mdc-button__label">Learn more</span>
+												<i class="material-icons mdc-button__icon" aria-hidden="true">arrow_forward</i>
+											</a>
+										</div>					
+									</div>
+								</div>
+								<div class="mdc-layout-grid__cell">
+									<div class="mdc-card" style="width: 100%; border-radius: 0;">
+										<div class="mdc-card__content">
+											<div class="mdc-card__primary-text">
+												Game Con
+											</div>
+											<div class="mdc-card__subtext">
+												Build creative and interesting games and play the games of your peers in this exciting event.
+											</div>
+										</div>
+										<div class="mdc-card__actions mdc-card__actions--full-bleed">
+											<a class="mdc-button mdc-card__action mdc-card__action--button" href="details.html#event-details">
+												<div class="mdc-button__ripple"></div>
+												<span class="mdc-button__label">Learn more</span>
+												<i class="material-icons mdc-button__icon" aria-hidden="true">arrow_forward</i>
+											</a>
+										</div>					
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="prac-test">
+					<div class="slider">
+						<div class="slides">
+							<input type="radio" name="action" id="radio-1">
+							<input type="radio" name="action" id="radio-2">
+							<div class="slide first-slide">
+								<h2 class="section-title">Think You Have What It Takes to Compete?</h2>
+								<div style="width: 100%; text-align: center;">
+									<div class="test__container" style="width: 50%; display: inline-block;">
+										<p class="about__text">Only 16 spots will be available for live competition at the Tech Tourney event. The holders of these spots will be determined by an online preliminary test. Note that if you do not choose to compete in this event or do not qualify, you are still welcome to view and participate in other events at TechWorld.</p>
+									</div>
+								</div>
+								<div class="prac-test__container">
+									<div class="mdc-touch-target-wrapper">
+										<button class="mdc-button mdc-button--touch mdc-button--raised">
+											<span class="mdc-button__ripple"></span>
+											<span class="mdc-button__touch"></span>
+											<span class="mdc-button__label">Register for the Test</span>
+										</button>
+									</div>
+									<div class="mdc-touch-target-wrapper">
+										<button class="mdc-button mdc-button--touch mdc-button--outlined">
+											<span class="mdc-button__ripple"></span>
+											<span class="mdc-button__touch"></span>
+											<span class="mdc-button__label">Take a Practice Test</span>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="slide second-slide">
+								<h2 class="section-title">Want to Speak In Front of An Attentive Audience?</h2>
+								<div style="width: 100%; text-align: center;">
+									<div class="test__container" style="width: 50%; display: inline-block;">
+										<p class="about__text">One spot will be available for a student speaker to present at Thomas Jefferson. Apply now for a chance to present at the auditorium in front of the student body and reputable speakers.</p>
+									</div>
+								</div>
+								<div class="prac-test__container">
+									<div class="mdc-touch-target-wrapper">
+										<button class="mdc-button mdc-button--touch mdc-button--raised">
+											<span class="mdc-button__ripple"></span>
+											<span class="mdc-button__touch"></span>
+											<span class="mdc-button__label">Apply</span>
+										</button>
+									</div>
+									<div class="mdc-touch-target-wrapper">
+										<button class="mdc-button mdc-button--touch mdc-button--outlined">
+											<span class="mdc-button__ripple"></span>
+											<span class="mdc-button__touch"></span>
+											<span class="mdc-button__label">More Details</span>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="navigation-auto">
+								<div class="auto-btn__1"></div>
+								<div class="auto-btn__2"></div>
+							</div>
+							<div class="navigation-manual">
+								<label for="radio-1" class="manual-btn" onclick="resetCounter()"></label>
+								<label for="radio-2" class="manual-btn" onclick="resetCounter()"></label>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer">
+				<p class="footer__title">TechWorld</p>
+
+				<div class="footer__social">
+					<a href="#" class="footer__icon"><i class="bx bxl-youtube"></i></a>
+					<a href="#" class="footer__icon"><i class="bx bxl-linkedin"></i></a>
+					<a href="#" class="footer__icon"><i class="bx bxl-facebook"></i></a>
+
+				</div>
+
+				<p>Bringing you the best in technology.</p>
+			</footer>
+			<script src="https://unpkg.com/scrollreveal"></script>
+			<script src="main.js"></script>
+			<script src="mdcscripts.js"></script>
+			<script src="particles.js-master/particles.js"></script>
+			<script src="particles.js-master/app.js"></script>
+			<script>
+				$(function(){
+					$("#nav-placeholder").load("nav.html");
+				});
+			</script>
+		</body>
+		</html>

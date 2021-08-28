@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TechWorld - Sign in</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+	<link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="registration.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="icon" type="image/png" href="images/techworld_logo.png">
+	<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+	<main style="height: 100vh; display: flex; align-items: center; justify-content: center;">
+		<section class="registration__wrapper">
+			<div class="registration__container" style="display: flex; align-items: center; justify-content: center;">
+				<div class="mdc-card mdc-card--outlined">
+					<div class="mdc-card__content">
+						<div class="mdc-card__primary-title">
+							<div class="mdc-card__title">Sign in<br><span class="mdc-card__subtitle">Sign in to TechWorld</span></div>
+						</div>
+						<div class="mdc-card__form">
+							<form action="create-account.php" autocomplete="off">
+								<div class="form-section form-section__email">
+									<div class="input__container">
+										<input type="text" name="" class="text-input email-address" id="email" required>
+										<label class="placeholder-text" for="email" id="placeholder-email">Email address</label>
+									</div>
+								</div>
+								<div class="form-section form-section__name">
+									<div class="input__container">
+										<input type="password" name="" class="text-input first-name" id="pass" required>
+										<label class="placeholder-text" for="pass" id="placeholder-pass">Password</label>
+									</div>
+									
+								</div>
+								<div class="form-section form-section__note">
+									<div class="form-note mdc-card__subtitle" style="padding: 12px; font-family: 'Roboto';">Sign in to connect virtually to a TechWorld event, useful in the scenario that one is in process currently or about to begin soon.</div>
+								</div>
+								<div class="form-section form-section__submit" style="display: flex; flex-direction: row-reverse;">
+									<div class="input__container" style="display: flex; flex-direction: row-reverse;">
+										<button class="mdc-button mdc-button--raised" style="box-shadow: none; font-family: 'Roboto'; font-size: 14px; background-color: #4285F4; text-transform: initial;">
+											<span class="mdc-button__label">Sign in</span>
+										</button>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="mdc-card mdc-card__supporting-text">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+	https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-analytics.js"></script>
+
+	<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+  	apiKey: "AIzaSyBrG3qjUCcvEWXfC4O1HzMw6T9f_-YUgl0",
+  	authDomain: "techworld-3e964.firebaseapp.com",
+  	projectId: "techworld-3e964",
+  	storageBucket: "techworld-3e964.appspot.com",
+  	messagingSenderId: "310179517162",
+  	appId: "1:310179517162:web:87c5521bfc8ca695193d93",
+  	measurementId: "G-TTCR0852XS"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  </body>
+  </html>

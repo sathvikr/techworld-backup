@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Roboto";
+	box-sizing: border-box;
+}
+
+.registration__wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+.registration__container {
+	max-width: 50%;
+	box-sizing: border-box;
+}
+
+.mdc-card__content {
+	padding: 16px;
+	box-sizing: border-box;
+}
+
+.mdc-card__primary-title {
+	padding: 16px;
+	padding-top: 24px;
+}
+
+.mdc-card__title {
+	font-size: 24px;
+}
+
+.mdc-card__subtitle {
+	font-size: 14px;
+	color: rgba(0, 0, 0, .6);
+}
+
+.mdc-card__form {
+	padding: 8.5px;
+	box-sizing: border-box;
+}
+
+.form-section {
+	display: flex;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.input__container {
+	display: block;
+	position: relative;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.text-input {
+	width: 95%;
+	padding: 8.5px;
+	margin: 5px;
+	border: none;
+	border-bottom: 1px solid #CCCCCC;
+	border-radius: 0px;
+	outline: none;
+	box-sizing: border-box;
+	transition: all 0.10s ease;
+}
+
+.text-input:focus {
+	border-bottom: 2px solid #4285F4;
+}
+
+.mdc-card__form label {
+	display: block;
+	position: relative;
+	background: none;
+	top: -30px;
+	left: 17px;
+	color: #999;
+	font-size: 14px;
+	z-index: 1;
+	transition: all 0.15s ease;
+	box-sizing: border-box;
+}
+
+.mdc-card__form label:hover {
+	cursor: text;
+}
+
+.text-input:focus ~ label {
+	/*width: 50px;*/
+	padding-left: 5px;
+	padding-right: 5px;
+	background: white;
+	top: -45px;
+	font-size: 10px;
+	color: #4285F4;
+}
+
+.text-input: valid ~ label {
+	padding-left: 5px;
+	padding-right: 5px;
+	background: white;
+	top: -45px;
+	font-size: 10px;
+}
+
+
+
+
+
+
+
+
+
+

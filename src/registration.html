@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TechWorld - Register</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+	<link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="registration.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="icon" type="image/png" href="images/techworld_logo.png">
+	<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+	<main style="height: 100vh; display: flex; align-items: center; justify-content: center;">
+		<section class="registration__wrapper">
+			<div class="registration__container" style="display: flex; align-items: center; justify-content: center;">
+				<div class="mdc-card mdc-card--outlined">
+					<div class="mdc-card__content">
+						<div class="mdc-card__primary-title">
+							<div class="mdc-card__title">Create a TechWorld Account<br><span class="mdc-card__subtitle">This is needed before you can actually sign up. <a href="#" style="text-decoration: none;">Sign in</a> if you already have an account.</span></div>
+						</div>
+						<div class="mdc-card__form">
+							<div class="form-section form-section__name">
+								<div class="input__container">
+									<input type="text" name="" class="text-input first-name" id="fname"  placeholder="First name" required>
+									<!-- <label class="placeholder-text" for="fname" id="placeholder-fname">First name</label> -->
+								</div>
+								<div class="input__container">
+									<input type="text" name="" class="text-input last-name" id="lname"  placeholder="Last name" required>
+									<!-- <label class="placeholder-text" for="lname" id="placeholder-lname">Last name</label> -->
+								</div>
+							</div>
+							<div class="form-section form-section__email">
+								<div class="input__container" style="width: 100%;">
+									<input type="email" name="" class="text-input email-address" id="email"  placeholder="Email" style="width: 97.5%;" required>
+									<!-- <label class="placeholder-text" for="email" id="placeholder-email">Email address</label> -->
+								</div>
+							</div>
+							<div class="form-section form-section__name">
+								<div class="input__container">
+									<input type="number" name="" class="text-input grade" id="grade"  placeholder="Grade" required min="1" max="12">
+									<!-- <label class="placeholder-text" for="confirm" id="placeholder-confirm">Confirm</label> -->
+								</div>
+								<div class="input__container">
+									<input type="password" name="" class="text-input pwd" id="pass"  placeholder="Password" required>
+									<!-- <label class="placeholder-text" for="pass" id="placeholder-pass">Password</label> -->
+								</div>
+							</div>
+							<div class="form-section form-section__note">
+								<div class="form-note mdc-card__subtitle" style="padding: 12px; font-family: 'Roboto';">Note that registering does not guarantee a spot. The decision on whether or not you will be given one will depend on when you applied and how many spots we have left at that time.</div>
+							</div>
+							<div class="form-section form-section__submit" style="display: flex; flex-direction: row-reverse;">
+								<div class="input__container" style="display: flex; flex-direction: row-reverse;">
+									<button class="mdc-button mdc-button--raised" style="box-shadow: none; font-size: 14px; background-color: #4285F4; text-transform: initial;" onclick="writeUserData()">
+										<span class="mdc-button__label">Register</span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-analytics.js"></script>
+
+	<script>
+		var firebaseConfig = {
+			apiKey: "AIzaSyDOY17cpa_Mo71LgtoT3j-SS5-yG-uwvRI",
+			authDomain: "techworld2-5f2d0.firebaseapp.com",
+			projectId: "techworld2-5f2d0",
+			storageBucket: "techworld2-5f2d0.appspot.com",
+			messagingSenderId: "74319037987",
+			appId: "1:74319037987:web:8f9558b6f0ed7530bc5396",
+			measurementId: "G-G9QRSTTPR5"
+		};
+
+		firebase.initializeApp(firebaseConfig);
+		firebase.analytics();
+
+
+		function writeUserData() {
+			firebase.database().ref("User").push({
+				name: document.getElementById("fname").value,
+				email: document.getElementById("email").value,
+				grade: document.getElementById("grade").value,
+				password: document.getElementById("pass").value
+			})
+		}
+	</script>
+</body>
+</html>
